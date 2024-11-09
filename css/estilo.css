@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#quiz {
+    margin-top: 5%;
+
+}
+
+button {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: none;
+}
+
+.resposta {
+    margin: auto auto;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.resposta:hover {
+    background-color: yellow;
+}
+
+.resposta.selecionada {
+    background-color: #c9c9f6;
+}
+
+#confirma {
+    margin: auto auto;
+    background-color: #11b411;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#confirma:hover {
+    background-color: green;
+}
+
+.errada {
+    background-color: red;
+    color: white;
+}
+
+.correta {
+    background-color: green;
+    color: white;
+    animation: piscaCerto 0.5s infinite;
+}
+
+@keyframes piscaCerto {
+
+    0%,
+    49% {
+        background-color: green;
+    }
+
+    50%,
+    100% {
+        background-color: seagreen;
+    }
+}
+
+#status {
+    padding: 10%;
+
+}
+
+#novoJogo {
+    background-color: black;
+    color: white;
+    margin: auto auto;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}
